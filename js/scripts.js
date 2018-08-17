@@ -1,37 +1,69 @@
-// business logic
+// // business logic
+//
+// var num = $("#userInput");
+// var result = [];
+//
+// var containsZeros = num.indexOf("0");
+// var containsOne = num.indexOf("1");
+// var divByThree = (num / 3 === 0);
+//
+// var num = $("#userInput");
+// for(var i = 0; < num.length; i++){
+//   var num = nums[1];
+//
+//   var final = [num]
+//   finals.push(final);
+// }
+// // var ifContainsZero = function(zeroNumber) {
+// //   num.forEach(function(num) {
+// //
+// // var ifNumberContainsZero = function(zero) {
+// //   for (var i = 0; i >= num.length; i++) {
+// //     var num = num[i];
+// //   }
+// // }
+// //
+//   containsZeros.forEach(function(containsZero) {
+//     if (num === containsZero) {
+//       return true;
+//     } else if (num === containsOne) {
+//       return true;
+//     } else if (num % 3 === 0) {
+//       return true;
+//     }
+//   });
+  //   }
+  // });
 
-var zero = "Beep!";
-var one = "Boop!";
-var divByThree= "I'm sorry, Dave. I'm afraid I can't do that.";
-var result = [];
-
+//   if (num === "ifContainsZero")
 // var num = ('#userInput');
 // num.toString().indexOf('0')
 // return zero;
 
-var ifContainsZero = function() {
-  beep.forEach(function(beep) {
 
-    (userInput).indexOf('0')
-});
-}
 
 // user interface logic
 $(document).ready(function() {
   $("#form").submit(function(event) {
     event.preventDefault();
 
-    var number = parseInt($('#userInput').val());
+    var number = $('#userInput').val();
+    var newNumber = [];
 
-    if (number > 0) {
-      $("#errorDisplay").text("Please enter a positive number.");
-     console.log(number);
+    if (number < "0") {
+      alert ("Please enter a positive number.");
+
+   } else if (number === "0") {
+      newNumber.push("Beep!");
+   } else if (number === "1") {
+      newNumber.push("Boop!");
+      console.log(newNumber);
+   // } else if (number === divByThree) {
+   //    newNumber = "I'm sorry, Dave. I'm afraid I can't do that.";
    } else {
-     return number;
+      newNumber.push(number);
    }
 
-
-  $("#errorDisplay").text("");
-  $("#result").text("");
+  $("#result").text(newNumber);
   });
 });
