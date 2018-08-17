@@ -1,27 +1,30 @@
 // // business logic
 //
-// var num = $("#userInput");
+// var num = parseInt($("#userInput"));
 // var result = [];
+// var containsZeros = "0"
 //
 // var containsZeros = num.indexOf("0");
 // var containsOne = num.indexOf("1");
 // var divByThree = (num / 3 === 0);
-// //
-// var num = $("#userInput");
-// for(var i = 0; < num.length; i++){
-//   var num = nums[1];
 //
+//
+// var containsZeros = function(containsZero) {
+//   if (num === "0") {
+//     return true;
+//   }
+// }
+
+// } else if (num === "1") {
+//   return containsOne;
+// } else (num % 3 === "0") {
+//   return divByThree;
+// }
 //   var final = [num]
 //   finals.push(final);
 // }
-// // var ifContainsZero = function(zeroNumber) {
-// //   num.forEach(function(num) {
-// //
-// // var ifNumberContainsZero = function(zero) {
-// //   for (var i = 0; i >= num.length; i++) {
-// //     var num = num[i];
-// //   }
-// // }
+// var ifContainsZero = function(zeroNumber) {
+//   num.forEach(function(num) {
 // //
 //   containsZeros.forEach(function(containsZero) {
 //     if (num === containsZero) {
@@ -32,8 +35,6 @@
 //       return true;
 //     }
 //   });
-  //   }
-  // });
 
 //   if (num === "ifContainsZero")
 // var num = ('#userInput');
@@ -52,9 +53,9 @@ $(document).ready(function() {
 
     if (number < "0") {
       alert ("Please enter a positive number.");
-
    } else if (number === "0") {
       newNumber.push("Beep!");
+      console.log(newNumber);
    } else if (number === "1") {
       newNumber.push("Boop!");
    } else if (number % 3 === "0") {
@@ -63,10 +64,9 @@ $(document).ready(function() {
       newNumber.push(number);
    }
 
-   for (var index = 0; index <= number; index += 1) {
-     newNumber.push(index);
-   }
-
+    for (var index = 0; index <= number; index ++) {
+     newNumber.push(" " + index);
+    }
 
   $("#result").text(newNumber);
   });
