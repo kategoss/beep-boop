@@ -10,33 +10,29 @@ This program will take in user inputted numbers and return one of 3 phrases depe
 
 ## Specifications
 
-Program returns user inputted number with a range of numbers from 0 to the user inputted number
-  -- Example input: 5
-  -- Example output: ["0, 1, 2, 3, 4, 5"]
-
 Program replaces any number containing 0 with "Beep!"
 -- Example input: 0
 -- Example output: ["Beep!"]
 
 Program replaces any number containing 1 with "Boop!"
-  -- Example input: 1
-  -- Example output: ["Boop!"]
+-- Example input: 1
+-- Example output: ["Boop!"]
 
 Program replaces any number divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that!"
-  -- Example input: 30
-  -- Example output: ["I'm sorry Dave, I'm afraid I can't do that!"]
+-- Example input: 30
+-- Example output: ["I'm sorry Dave, I'm afraid I can't do that!"]
 
-Program rejects any letters or special characters.
-  -- Example input: #, dog
-  -- Example output: [Error: "Please insert a positive number"]
+Program returns user inputted number with a range of numbers from 0 to the user inputted number
+  -- Example input: 5
+  -- Example output:  ["Beep!","Boop!", 2, "I'm sorry Dave. I'm afraid I can't do that", 4, 5]
 
-Program rejects any negative number.
-  -- Example input: -100
+Program rejects any letters, special characters or negative numbers
+  -- Example input: #, dog, -100
   -- Example output: [Error: "Please insert a positive number"]
 
 Program clears previous user input to allow for new number input.
-  -- Example input: 10 enter, 4 enter
-  -- Example output: ["Beep!", "0, 1, 2, 3, 4"]
+  -- Example input: 3 enter, 2 enter
+  -- Example output: ["Beep!","Boop!", 2, "I'm sorry Dave. I'm afraid I can't do that"] ["Beep!", "Boop!", 2]
 
 ## Setup/Installation Instructions
 
